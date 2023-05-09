@@ -84,6 +84,8 @@ editor.addEventListener("paste",
       }
     )
 
+    // rows are formatted into markdown with each column
+    // padded to its maximum width using spaces
     var markdownRows = rows.map(
       function (row, rowIndex)
       {
@@ -101,6 +103,7 @@ editor.addEventListener("paste",
       }
     )
 
+    // row separator is added based on the column alignments
     markdownRows.splice(1, 0, "|" + columnWidths.map(
       function (width, index)
       {
@@ -122,7 +125,10 @@ editor.addEventListener("paste",
       }
     ).join("|") + "|")
 
+    // markdown text is set as the value of the HTML element with the ID "editor" 
     event.target.value = markdownRows.join("\n")
+
+    // the function returns false to prevent the default paste behavior
     return false
   }
 )
