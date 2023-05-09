@@ -1,4 +1,4 @@
-# Copy table from Excel generate Markdown by pasting Data
+# Copy Table from Excel & get Markdown format Table
 
 Copy a table in Excel and paste it as a Markdown table.
 
