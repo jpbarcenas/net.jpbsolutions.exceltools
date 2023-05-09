@@ -14,16 +14,16 @@ For example: enter the following in Excel to right-align the second column and c
 
 | environment | ^rdb_date | ^capp_date |
 | ----------- | --------- | ---------- |
-| prd         | 5/1/2023  | 5/1/2023   |
-| qa          | 5/1/2023  | 5/1/2023   |
-| uat         | 5/1/2023  | 5/1/2023   |
+| prd         | 5/1/23    | 5/1/23     |
+| qa          | 5/1/23    | 5/1/23     |
+| uat         | 5/1/23    | 5/1/23     |
 
 This will produce the following markdown table when pasted:
 
 ```markdown
-| environment |  db_date | app_date |
-| ----------- | -------: | :------: |
-| prd         | 5/1/2023 | 5/1/2023 |
-| qa          | 5/1/2023 | 5/1/2023 |
-| uat         | 5/1/2023 | 5/1/2023 |
+| environment | db_date | app_date |
+| ----------- | ------: | :------: |
+| prd         |  5/1/23 |  5/1/23  |
+| qa          |  5/1/23 |  5/1/23  |
+| uat         |  5/1/23 |  5/1/23  |
 ```
